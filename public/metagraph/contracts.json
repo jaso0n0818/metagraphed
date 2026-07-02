@@ -813,7 +813,7 @@
     {
       "content_type": "application/json",
       "contract_version": "2026-07-01.1",
-      "description": "Long-term daily uptime history per operational surface for one subnet (90d/1y window), served live from the surface_uptime_daily D1 rollup (no static file).",
+      "description": "Long-term daily uptime history per operational surface for one subnet (90d/1y window), served live from the surface_uptime_daily D1 rollup (no static file). Supports a min_samples floor that drops low-sample day rows in SQL.",
       "id": "subnet-uptime",
       "path": "/metagraph/subnets/{netuid}/uptime.json",
       "schema_ref": "#/components/schemas/UptimeArtifact",
